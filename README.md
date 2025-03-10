@@ -1,4 +1,4 @@
-# Comepleted tasks
+# Completed tasks
 
 - **week_01** <br>
   ✅ data_types <br>
