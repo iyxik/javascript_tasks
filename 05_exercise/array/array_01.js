@@ -21,3 +21,40 @@ let teamMembers = ['John', 'Emily', 'Mike', 'Sarah'];
 17. Check if at least one member in the array is named "John".  
 18. Check if all names in the array have more than three letters. 
 */
+
+
+let teamMembers = ['John', 'Emily', 'Mike', 'Sarah'];
+
+teamMembers.forEach(name => console.log(name));
+
+teamMembers.shift();
+teamMembers.pop();
+
+teamMembers.unshift('Alex');
+teamMembers.push('Linda');
+
+let slicedArray = teamMembers.slice(2);
+
+let mikeIndex = teamMembers.indexOf('Mike');
+let jakeIndex = teamMembers.indexOf('Jake');
+
+teamMembers.splice(mikeIndex, 1, 'Carol', 'Bruce');
+
+let newArray = teamMembers.concat('Bob');
+
+let copiedArray = teamMembers.slice();
+
+let newMembers = ['Tina', 'Dean'];
+let mergedArray = teamMembers.concat(newMembers);
+
+let johnIndexes = teamMembers
+    .map((name, index) => name === 'John' ? index : -1)
+    .filter(index => index !== -1);
+
+let uppercasedArray = teamMembers.map(name => name.toUpperCase());
+
+teamMembers.sort();
+teamMembers.reverse();
+
+let hasJohn = teamMembers.includes('John');
+let allMoreThanThreeLetters = teamMembers.every(name => name.length > 3);

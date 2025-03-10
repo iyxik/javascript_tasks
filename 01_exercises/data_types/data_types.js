@@ -10,3 +10,14 @@
 7. Use the typeof operator to check and print the data type of each variable.
 */
 
+let age = 25;
+const name = "John";
+let isStudent = true;
+let hobbies = ["reading", "coding", "running"];
+let info = {
+    schoolName: "Business College Helsinki",
+    groupName: "REACT25K"
+};
+
+console.log(age, name, isStudent, hobbies, info);
+console.log(typeof age, typeof name, typeof isStudent, typeof hobbies, typeof info);

@@ -89,7 +89,23 @@ Create an object named `smartphone` with properties for `brand`, `model`, `batte
 Write a function that logs `"This phone supports 5G!"` if `is5GEnabled` is `true`, otherwise logs `"This phone does not support 5G."`
 */
 
-// Your code here
+let smartphone = {
+    brand: 'Samsung',
+    model: 'Galaxy S23',
+    batteryLife: '20 hours',
+    is5GEnabled: true
+};
+
+function check5GSupport(phone) {
+    if (phone.is5GEnabled) {
+        console.log("This phone supports 5G!");
+    } else {
+        console.log("This phone does not support 5G.");
+    }
+}
+
+check5GSupport(smartphone);
+
 
 /* Task 14
 Define an object named `fox` with properties `name`, `age`, and `habitat`.
