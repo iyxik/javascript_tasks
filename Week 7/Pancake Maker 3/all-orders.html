@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Orders</title>
+    <link rel="stylesheet" href="all-orders.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>All Orders</h1>
+
+        <input type="text" id="searchInput" placeholder="Search by Name or ID" oninput="searchOrders()">
+        <select id="sortSelect" onchange="sortOrders()">
+            <option value="status">Select Order Status</option>
+            <option value="waiting">Waiting First</option>
+            <option value="ready">Ready First</option>
+            <option value="delivered">Delivered First</option>
+        </select>
+
+        <!-- Orders Container -->
+        <div id="ordersContainer"></div>
+    </div>
+
+    <script src="all-orders.js"></script>
+</body>
+
+</html>
