@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Pancake Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="img/pankak.jpg" alt="Delicious pancakes" />
+      <div class="price-banner"><span id="totalPrice">5€</span></div>
+    </div>
+
+    <div class="form-container">
+      <h2>Customize Your Pancake</h2>
+
+      <form id="pancakeForm">
+        <!-- Customer Name -->
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required />
+
+        <!-- Pancake Type -->
+        <label for="type">Choose your pancake type:</label>
+        <select id="type" name="pancakeType">
+          <option data-price="5">Classic - 5€</option>
+          <option data-price="6">Chocolate - 6€</option>
+          <option data-price="7">Blueberry - 7€</option>
+          <option data-price="8">Waffle - 8€</option>
+        </select>
+
+        <!-- Toppings -->
+        <h3>Select your toppings (1€ each):</h3>
+        <label><input type="checkbox" class="topping" data-price="1" value="Nuts" /> Nuts</label>
+        <label><input type="checkbox" class="topping" data-price="1" value="Bananas" /> Bananas</label>
+        <label><input type="checkbox" class="topping" data-price="1" value="Syrup" /> Syrup</label>
+        <label><input type="checkbox" class="topping" data-price="1" value="Cherries" /> Cherries</label>
+        <label><input type="checkbox" class="topping" data-price="1" value="Nutella" /> Nutella</label>
+
+        <!-- Extras -->
+        <h3>Add extras:</h3>
+        <label><input type="checkbox" class="extra" data-price="2" value="Whipped Cream" /> Whipped Cream - 2€</label>
+        <label><input type="checkbox" class="extra" data-price="3" value="Ice Cream" /> Ice Cream - 3€</label>
+        <label><input type="checkbox" class="extra" data-price="4" value="Strawberry" /> Strawberry - 4€</label>
+        <label><input type="checkbox" class="extra" data-price="4" value="Yogurt" /> Yogurt - 4€</label>
+
+        <!-- Delivery Method -->
+        <h3>Choose delivery method:</h3>
+        <label><input type="radio" name="delivery" class="delivery" data-price="0" checked />
+          Eat In</label>
+        <label><input type="radio" name="delivery" class="delivery" data-price="0" />
+          Pick Up</label>
+        <label><input type="radio" name="delivery" class="delivery" data-price="6" />
+          Delivery (+6€)</label>
+
+        <!-- Total Price Display -->
+        <h3>Total Price: <span id="totalPriceDisplay">5€</span></h3>
+
+        <!-- See Order Button -->
+        <button type="button" id="seeOrder">See Order</button>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
