@@ -5,6 +5,6 @@ Use console.log() to print the value of ageLimit.
 Use typeof to check and print the data type of ageLimit.
  */
 
-const ageLimit = 18;
+const ageLimit = 19;
 console.log(ageLimit);
 console.log(typeof ageLimit);
