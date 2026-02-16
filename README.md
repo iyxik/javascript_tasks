@@ -19,17 +19,20 @@
   - [x] Pancake maker
 - **week_05:**
   - [x] Array
-  - [x] Pancake maker 2
+  - [x] PancakeMaker 2
 - **week_06:**
+
   - [x] Objects
   - [x] Little zoo
 
 - **week_07:**
+
   - [x] JSON
   - [x] Localstorage
   - [x] Pancake maker 3
 
 - **week_08:**
+
   - [x] Error handling
   - [x] Fault findings
   - [x] JS writing practices
